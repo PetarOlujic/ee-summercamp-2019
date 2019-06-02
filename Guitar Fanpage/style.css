@@ -1,0 +1,164 @@
+body{
+    background-color: lightgrey;  
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    font-size: 100%;
+    border-style: outset;
+    border-width: 10px;
+    border-radius: 15px;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color: black;
+    text-shadow: gray 2px 2px;
+    font-style: oblique;
+    margin: 0.5em;
+}
+
+.Intro{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.Social_network_logos{
+   text-align: center;
+}
+
+#Search_container {
+    padding: 0.25em;
+    text-align: right;
+}
+
+#Search_box {
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+main {
+    max-width: 1300px;
+    margin: 2em auto;
+    padding: 0 0.5em;
+    display: flex;
+
+}
+
+#Main_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+#Slider {
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+#Slider_thumbnails_container{
+    display: flex;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+#Slider_thumbnails_container .Thumbnail:not(:last-of-type) {
+    margin-right: 5px;
+}
+
+.Thumbnail, .Thumbnail_selected{
+    border-bottom: 2px solid transparent;
+}
+
+#Slider_thumbnails_container .Thumbnail_selected {
+    border-bottom: 2px solid gray;
+}
+
+#Slider_thumbnails_container .Thumbnail:hover {
+    border-bottom: 2px solid lightslategray;
+}
+#Guitar_description > p > em{
+    justify-content:  center;
+}
+
+.Featured_acoustic, .Featured_electric{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.Picture_acoustic > a, .Picture_electric > a{
+    text-decoration: none;
+}
+
+#Additional_links_column{
+    flex: 0 0 150px;
+    background-color: lightsteelblue;
+    padding: 0.5em 0.5em;
+    margin: 10px 10px 0 0;
+    border-style: dotted;
+    border: 2px white;
+    border-radius: 5px;
+}
+
+#Suggestions_column{
+    flex: 0 0 150px;
+    background-color: lightsteelblue;
+    padding: 0.5em 0.5em;
+    margin: 10px 0 0 10px;
+    border-style: dotted;
+    border: 2px white;
+    border-radius: 5px;
+}
+
+#Featured_guitar_descriptions_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+}
+
+.Featured_guitar_description:not(:last-of-type){
+    margin-right: 5px;
+}
+
+#Featured_guitar_descriptions_container .Featured_guitar_description{
+    padding: 0.3rem;
+    text-align: justify;
+    background-color: lightgray;
+    position: relative; 
+}
+
+.Featured_guitar_description > img, .Featured_guitar_description > p {
+    max-width: 250px;
+}
+
+footer{
+    padding: 0.5em;
+    text-align: center;
+    background-color: lightsalmon;
+    border-width: 2px;
+    border-color: black;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
